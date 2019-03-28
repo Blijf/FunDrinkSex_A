@@ -16,4 +16,10 @@
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         />
+    <VideoView
+        android:id="@+id/videoView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
 </android.support.constraint.ConstraintLayout>

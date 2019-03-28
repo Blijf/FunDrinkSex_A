@@ -106,10 +106,14 @@ public class AddPlayersFragment extends Fragment
         //BOTÓN COMENZAR
         //------------------------------------------------------------------
 //        buttonComenzar.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.ruletaFragment));
-        buttonComenzar.setOnClickListener(new View.OnClickListener() {
+        buttonComenzar.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View v)
             {
+
+//                navController.navigate(R.id.ruletaFragment);
+
                 if(jugadores.minPlayersToPLay(minplayers))
                     navController.navigate(R.id.ruletaFragment);
                 else

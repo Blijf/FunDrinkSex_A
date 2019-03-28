@@ -26,5 +26,46 @@
         android:id="@+id/ruletaFragment"
         android:name="com.AtlantisGames.fundrinksex.Fragments.RuletaFragment"
         android:label="fragment_ruleta"
-        tools:layout="@layout/fragment_ruleta" />
+        tools:layout="@layout/fragment_ruleta" >
+        <action
+            android:id="@+id/action_ruletaFragment_to_pruebaFragment"
+            app:destination="@id/pruebaFragment" />
+        <action
+            android:id="@+id/action_ruletaFragment_to_versusFragment"
+            app:destination="@id/versusFragment" />
+        <action
+            android:id="@+id/action_ruletaFragment_to_poderFragment2"
+            app:destination="@id/poderFragment" />
+        <action
+            android:id="@+id/action_ruletaFragment_to_castigoFragment"
+            app:destination="@id/castigoFragment" />
+        <action
+            android:id="@+id/action_ruletaFragment_to_afinidadFragment2"
+            app:destination="@id/afinidadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pruebaFragment"
+        android:name="com.AtlantisGames.fundrinksex.PruebaFragment"
+        android:label="fragment_prueba"
+        tools:layout="@layout/fragment_prueba" />
+    <fragment
+        android:id="@+id/versusFragment"
+        android:name="com.AtlantisGames.fundrinksex.VersusFragment"
+        android:label="fragment_versus"
+        tools:layout="@layout/fragment_versus" />
+    <fragment
+        android:id="@+id/poderFragment"
+        android:name="com.AtlantisGames.fundrinksex.PoderFragment"
+        android:label="fragment_poder"
+        tools:layout="@layout/fragment_poder" />
+    <fragment
+        android:id="@+id/castigoFragment"
+        android:name="com.AtlantisGames.fundrinksex.CastigoFragment"
+        android:label="fragment_castigo"
+        tools:layout="@layout/fragment_castigo" />
+    <fragment
+        android:id="@+id/afinidadFragment"
+        android:name="com.AtlantisGames.fundrinksex.AfinidadFragment"
+        android:label="fragment_afinidad"
+        tools:layout="@layout/fragment_afinidad" />
 </navigation>
