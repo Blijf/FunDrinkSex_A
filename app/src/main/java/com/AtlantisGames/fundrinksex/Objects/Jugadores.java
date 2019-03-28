@@ -1,5 +1,6 @@
 package com.AtlantisGames.fundrinksex.Objects;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Jugadores
@@ -12,6 +13,7 @@ public class Jugadores
     public Jugadores (int size)
     {
         this.size=size;
+        players = new ArrayList<>();
     }
 
     //METHODS
@@ -25,6 +27,7 @@ public class Jugadores
             player.setId(players.size());
         }
     }
+
 
     public List<Player> getJugaddores(){return players;}
 
@@ -46,11 +49,11 @@ public class Jugadores
 
     public boolean isEmpty()
     {
-        return players.size()!=0?false:true;
+        return players.size() == 0;
     }
 
     public boolean minPlayersToPLay(int cant)
     {
-        return players.size()>=cant?true:false;
+        return players.size() >= cant;
     }
 }

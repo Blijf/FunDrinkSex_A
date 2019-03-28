@@ -17,5 +17,14 @@
         android:id="@+id/addPlayersFragment"
         android:name="com.AtlantisGames.fundrinksex.Fragments.AddPlayersFragment"
         android:label="fragment_add_players"
-        tools:layout="@layout/fragment_add_players" />
+        tools:layout="@layout/fragment_add_players" >
+        <action
+            android:id="@+id/action_addPlayersFragment_to_ruletaFragment"
+            app:destination="@id/ruletaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ruletaFragment"
+        android:name="com.AtlantisGames.fundrinksex.Fragments.RuletaFragment"
+        android:label="fragment_ruleta"
+        tools:layout="@layout/fragment_ruleta" />
 </navigation>
