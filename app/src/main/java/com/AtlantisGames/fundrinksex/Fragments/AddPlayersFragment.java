@@ -39,7 +39,7 @@ public class AddPlayersFragment extends Fragment
     private boolean comenzar;
     private final static int size=15;//núm. jugadores
     private final static int minplayers=2;//núm. jugadores
-    private Jugadores jugadores;
+    public static Jugadores jugadores;
     public AddPlayersFragment()
     {
         // Required empty public constructor
@@ -62,7 +62,7 @@ public class AddPlayersFragment extends Fragment
         textViewColumna2.setText("");
         textViewColumna3.setText("");
 
-        jugadores= new Jugadores(15);
+        jugadores= new Jugadores(size);
 
 
         //------------------------------------------------------------------
@@ -148,7 +148,6 @@ public class AddPlayersFragment extends Fragment
             if(currentSize<=5)
             {
                 textViewColumna1.setText(textViewColumna1.getText()+String.valueOf(player.getId())+". "+name+"\n");
-
             }
             else if(currentSize<=10)
             {

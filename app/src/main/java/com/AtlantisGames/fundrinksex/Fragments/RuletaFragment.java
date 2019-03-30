@@ -113,6 +113,7 @@ public class RuletaFragment extends Fragment {
                         //Elegimos el video de parada de forma aleatoria donde se va a pasar
                         Random random= new Random();
                         choise= random.nextInt(5);
+//                        choise=3;
                         videoView2.setVideoURI(paradasUri.get(choise));
                         videoView2.requestFocus();
                         videoView2.start();

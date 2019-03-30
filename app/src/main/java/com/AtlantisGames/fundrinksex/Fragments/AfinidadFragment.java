@@ -1,4 +1,4 @@
-package com.AtlantisGames.fundrinksex;
+package com.AtlantisGames.fundrinksex.Fragments;
 
 
 import android.os.Bundle;
@@ -7,14 +7,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.AtlantisGames.fundrinksex.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class PruebaFragment extends Fragment {
+public class AfinidadFragment extends Fragment {
 
 
-    public PruebaFragment() {
+    public AfinidadFragment() {
         // Required empty public constructor
     }
 
@@ -23,7 +25,7 @@ public class PruebaFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_prueba, container, false);
+        return inflater.inflate(R.layout.fragment_afinidad, container, false);
     }
 
 }
