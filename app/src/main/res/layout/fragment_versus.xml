@@ -8,42 +8,98 @@
     android:background="@android:color/holo_blue_dark"
     tools:context=".Fragments.VersusFragment">
 
+    <ImageView
+        android:id="@+id/imageFondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/versus" />
+
+    <TextView
+        android:id="@+id/tvmodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="VERSUS"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageFondo" />
+
     <TextView
         android:id="@+id/tvNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Nombre"
-        app:layout_constraintBottom_toTopOf="@+id/tvEnunciado"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tvEnunciado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="164dp"
-        android:layout_marginEnd="8dp"
-        android:text="Enunciado"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tvObjetivos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="8dp"
-        android:text="Objetivo"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="PACO VS ANA"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvmodo" />
+
+    <TextView
+        android:id="@+id/tvcondition"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="PARA EL PERDEDOR"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvEnunciado" />
+
+    <TextView
+        android:id="@+id/tvEnunciado"
+        android:layout_width="316dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:padding="12dp"
+        android:text="Llama a algún conocido y repite lo mismo que diga. Haz que la llamada dure más de 30 segundos"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombre" />
+
+    <TextView
+        android:id="@+id/tvObjetivos"
+        android:layout_width="324dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:padding="12dp"
+        android:text="Untate la cara con pasta de dientes y dejalo durante 15 min. Si no hay pasta coge yogur, mermelada..."
+        android:textAlignment="center"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageFondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvcondition"
+        app:layout_constraintVertical_bias="0.137" />
+
 </android.support.constraint.ConstraintLayout>
 

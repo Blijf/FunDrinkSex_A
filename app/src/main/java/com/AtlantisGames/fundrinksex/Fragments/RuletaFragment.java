@@ -54,7 +54,7 @@ public class RuletaFragment extends Fragment {
         paradasUri = new ArrayList<>();
 
         //location de los videos
-        uriRuleta = Uri.parse("android.resource://" + getActivity().getPackageName() + "/"+R.raw.prueba);
+        uriRuleta = Uri.parse("android.resource://" + getActivity().getPackageName() + "/"+R.raw.mp4directo);
 
         final Uri uriParada_prueba = Uri.parse("android.resource://" + getActivity().getPackageName() + "/"+R.raw.prueba2);//amarilllo
         final Uri uriParada_versus = Uri.parse("android.resource://" + getActivity().getPackageName() + "/"+R.raw.prueba2);//azul

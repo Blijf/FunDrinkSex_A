@@ -2,6 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/background_dark"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -10,21 +11,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/p4"
+        app:srcCompat="@drawable/inicio"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
-    <ImageView
-        android:id="@+id/ivTitulo"
-        android:layout_width="match_parent"
-        android:layout_height="461dp"
-        android:layout_marginBottom="8dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toTopOf="@+id/btToAddplayers"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.616"
-        app:srcCompat="@drawable/p1"
-        tools:layout_editor_absoluteX="8dp" />
+
 
     <Button
         android:id="@+id/btToAddplayers"
@@ -33,9 +24,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="132dp"
-        android:background="@drawable/p1_1"
         android:fontFamily="@font/quicksand_bold"
         android:text="Play"
+        android:background="@drawable/playfondo"
         android:textColor="@color/colorTextWhite"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,34 +35,33 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/ib_speaker"
+        android:id="@+id/ib_audio"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="52dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:scaleType="fitCenter"
         android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/audio"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btToAddplayers"
-        app:layout_constraintVertical_bias="0.612"
-        app:srcCompat="@drawable/p1_3"
-        />
+        app:layout_constraintVertical_bias="0.619" />
 
     <ImageButton
-        android:id="@+id/ib_speaker2"
+        android:id="@+id/ib_info"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginEnd="52dp"
         android:layout_marginBottom="8dp"
         android:background="@null"
         android:scaleType="fitCenter"
+        android:src="@drawable/info"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btToAddplayers"
-        app:layout_constraintVertical_bias="0.619"
-        app:srcCompat="@drawable/p1_2" />
+        app:layout_constraintVertical_bias="0.619" />
 
 </android.support.constraint.ConstraintLayout>
